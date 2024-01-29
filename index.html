@@ -18,8 +18,11 @@
 <body>
     <div class="container">
         <h1>App de clima</h1>
-        <h2>Ciudad: </h2>
-        <h2><span></span>°C</h2>
+        <label for="cityInput">Ciudad: </label>
+        <input type="text" id="cityInput" placeholder="Ingrese la ciudad">
+        <button onclick="getWeatherByCity()">Obtener Clima</button>
+        <h2>Ciudad: <span id="cityName"></span></h2>
+        <h2><span id="temperature"></span>°C</h2>
     </div>
     <script src="./app.js"></script>
 </body>
